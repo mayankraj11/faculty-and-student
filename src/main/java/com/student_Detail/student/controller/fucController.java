@@ -14,7 +14,7 @@ public class fucController {
     private FecultyService FecultyService;
     @PostMapping("/")
     public Faculty createFeculty(@RequestBody Faculty fuc){
-        System.out.println("Feculty"+fuc.getFacName());
+        System.out.println("Faculty"+fuc.getFacName());
         return FecultyService.createFeculty(fuc);
     }
     @GetMapping("/")
